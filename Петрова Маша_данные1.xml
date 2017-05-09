@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields xmlns:xfdf="http://ns.adobe.com/xfdf-transition/"
+><address
+>деревня Кулебякина, дом 17</address
+><birth_complications
+>3</birth_complications
+><d_birth
+>08</d_birth
+><d_fill
+>30</d_fill
+><f_age
+>38</f_age
+><f_edu
+>5</f_edu
+><finance
+>3</finance
+><g_age
+>68</g_age
+><g_edu
+>5</g_edu
+><gender
+>2</gender
+><health
+>1</health
+><language
+>2</language
+><m_age
+>28</m_age
+><m_birth
+>10</m_birth
+><m_edu
+>2</m_edu
+><m_fill
+>12</m_fill
+><mood
+>2</mood
+><name
+>Петрова Маша</name
+><numberofkids
+>2</numberofkids
+><phone
+>+791390787</phone
+><seizures
+>2</seizures
+><group xfdf:original="topmostSubform[0]"
+><group xfdf:original="Page2[0]"
+><field xfdf:original="RadioButtonList[0]"
+>3</field
+><field xfdf:original="RadioButtonList[100]"
+>Off</field
+><field xfdf:original="RadioButtonList[101]"
+>Off</field
+><field xfdf:original="RadioButtonList[102]"
+>Off</field
+><field xfdf:original="RadioButtonList[103]"
+>Off</field
+><field xfdf:original="RadioButtonList[104]"
+>Off</field
+><field xfdf:original="RadioButtonList[105]"
+>Off</field
+><field xfdf:original="RadioButtonList[106]"
+>Off</field
+><field xfdf:original="RadioButtonList[107]"
+>Off</field
+><field xfdf:original="RadioButtonList[108]"
+>Off</field
+><field xfdf:original="RadioButtonList[109]"
+>Off</field
+><field xfdf:original="RadioButtonList[10]"
+>2</field
+><field xfdf:original="RadioButtonList[110]"
+>Off</field
+><field xfdf:original="RadioButtonList[111]"
+>Off</field
+><field xfdf:original="RadioButtonList[112]"
+>Off</field
+><field xfdf:original="RadioButtonList[113]"
+>Off</field
+><field xfdf:original="RadioButtonList[114]"
+>Off</field
+><field xfdf:original="RadioButtonList[115]"
+>Off</field
+><field xfdf:original="RadioButtonList[116]"
+>Off</field
+><field xfdf:original="RadioButtonList[117]"
+>Off</field
+><field xfdf:original="RadioButtonList[118]"
+>Off</field
+><field xfdf:original="RadioButtonList[119]"
+>Off</field
+><field xfdf:original="RadioButtonList[11]"
+>2</field
+><field xfdf:original="RadioButtonList[120]"
+>Off</field
+><field xfdf:original="RadioButtonList[121]"
+>Off</field
+><field xfdf:original="RadioButtonList[122]"
+>Off</field
+><field xfdf:original="RadioButtonList[123]"
+>Off</field
+><field xfdf:original="RadioButtonList[124]"
+>Off</field
+><field xfdf:original="RadioButtonList[125]"
+>Off</field
+><field xfdf:original="RadioButtonList[126]"
+>Off</field
+><field xfdf:original="RadioButtonList[127]"
+>Off</field
+><field xfdf:original="RadioButtonList[128]"
+>Off</field
+><field xfdf:original="RadioButtonList[129]"
+>Off</field
+><field xfdf:original="RadioButtonList[12]"
+>3</field
+><field xfdf:original="RadioButtonList[130]"
+>Off</field
+><field xfdf:original="RadioButtonList[131]"
+>Off</field
+><field xfdf:original="RadioButtonList[132]"
+>Off</field
+><field xfdf:original="RadioButtonList[133]"
+>Off</field
+><field xfdf:original="RadioButtonList[134]"
+>Off</field
+><field xfdf:original="RadioButtonList[135]"
+>Off</field
+><field xfdf:original="RadioButtonList[136]"
+>Off</field
+><field xfdf:original="RadioButtonList[137]"
+>Off</field
+><field xfdf:original="RadioButtonList[138]"
+>Off</field
+><field xfdf:original="RadioButtonList[139]"
+>Off</field
+><field xfdf:original="RadioButtonList[13]"
+>3</field
+><field xfdf:original="RadioButtonList[140]"
+>Off</field
+><field xfdf:original="RadioButtonList[141]"
+>Off</field
+><field xfdf:original="RadioButtonList[142]"
+>Off</field
+><field xfdf:original="RadioButtonList[143]"
+>Off</field
+><field xfdf:original="RadioButtonList[144]"
+>Off</field
+><field xfdf:original="RadioButtonList[145]"
+>Off</field
+><field xfdf:original="RadioButtonList[146]"
+>Off</field
+><field xfdf:original="RadioButtonList[147]"
+>Off</field
+><field xfdf:original="RadioButtonList[148]"
+>Off</field
+><field xfdf:original="RadioButtonList[149]"
+>Off</field
+><field xfdf:original="RadioButtonList[14]"
+>3</field
+><field xfdf:original="RadioButtonList[150]"
+>Off</field
+><field xfdf:original="RadioButtonList[151]"
+>Off</field
+><field xfdf:original="RadioButtonList[152]"
+>Off</field
+><field xfdf:original="RadioButtonList[153]"
+>Off</field
+><field xfdf:original="RadioButtonList[154]"
+>Off</field
+><field xfdf:original="RadioButtonList[155]"
+>Off</field
+><field xfdf:original="RadioButtonList[156]"
+>Off</field
+><field xfdf:original="RadioButtonList[157]"
+>Off</field
+><field xfdf:original="RadioButtonList[158]"
+>Off</field
+><field xfdf:original="RadioButtonList[159]"
+>Off</field
+><field xfdf:original="RadioButtonList[15]"
+>Off</field
+><field xfdf:original="RadioButtonList[160]"
+>Off</field
+><field xfdf:original="RadioButtonList[161]"
+>Off</field
+><field xfdf:original="RadioButtonList[162]"
+>Off</field
+><field xfdf:original="RadioButtonList[163]"
+>Off</field
+><field xfdf:original="RadioButtonList[164]"
+>Off</field
+><field xfdf:original="RadioButtonList[165]"
+>Off</field
+><field xfdf:original="RadioButtonList[166]"
+>Off</field
+><field xfdf:original="RadioButtonList[167]"
+>Off</field
+><field xfdf:original="RadioButtonList[168]"
+>Off</field
+><field xfdf:original="RadioButtonList[169]"
+>Off</field
+><field xfdf:original="RadioButtonList[16]"
+>Off</field
+><field xfdf:original="RadioButtonList[170]"
+>Off</field
+><field xfdf:original="RadioButtonList[171]"
+>Off</field
+><field xfdf:original="RadioButtonList[172]"
+>Off</field
+><field xfdf:original="RadioButtonList[173]"
+>Off</field
+><field xfdf:original="RadioButtonList[174]"
+>Off</field
+><field xfdf:original="RadioButtonList[175]"
+>Off</field
+><field xfdf:original="RadioButtonList[176]"
+>Off</field
+><field xfdf:original="RadioButtonList[177]"
+>Off</field
+><field xfdf:original="RadioButtonList[178]"
+>Off</field
+><field xfdf:original="RadioButtonList[179]"
+>Off</field
+><field xfdf:original="RadioButtonList[17]"
+>Off</field
+><field xfdf:original="RadioButtonList[180]"
+>Off</field
+><field xfdf:original="RadioButtonList[181]"
+>Off</field
+><field xfdf:original="RadioButtonList[182]"
+>Off</field
+><field xfdf:original="RadioButtonList[183]"
+>Off</field
+><field xfdf:original="RadioButtonList[184]"
+>Off</field
+><field xfdf:original="RadioButtonList[185]"
+>Off</field
+><field xfdf:original="RadioButtonList[186]"
+>Off</field
+><field xfdf:original="RadioButtonList[187]"
+>Off</field
+><field xfdf:original="RadioButtonList[188]"
+>Off</field
+><field xfdf:original="RadioButtonList[189]"
+>Off</field
+><field xfdf:original="RadioButtonList[18]"
+>Off</field
+><field xfdf:original="RadioButtonList[190]"
+>Off</field
+><field xfdf:original="RadioButtonList[191]"
+>Off</field
+><field xfdf:original="RadioButtonList[192]"
+>Off</field
+><field xfdf:original="RadioButtonList[193]"
+>Off</field
+><field xfdf:original="RadioButtonList[194]"
+>Off</field
+><field xfdf:original="RadioButtonList[195]"
+>Off</field
+><field xfdf:original="RadioButtonList[196]"
+>Off</field
+><field xfdf:original="RadioButtonList[197]"
+>Off</field
+><field xfdf:original="RadioButtonList[198]"
+>Off</field
+><field xfdf:original="RadioButtonList[199]"
+>Off</field
+><field xfdf:original="RadioButtonList[19]"
+>Off</field
+><field xfdf:original="RadioButtonList[1]"
+>1</field
+><field xfdf:original="RadioButtonList[200]"
+>Off</field
+><field xfdf:original="RadioButtonList[201]"
+>Off</field
+><field xfdf:original="RadioButtonList[202]"
+>Off</field
+><field xfdf:original="RadioButtonList[203]"
+>Off</field
+><field xfdf:original="RadioButtonList[204]"
+>Off</field
+><field xfdf:original="RadioButtonList[205]"
+>Off</field
+><field xfdf:original="RadioButtonList[206]"
+>Off</field
+><field xfdf:original="RadioButtonList[207]"
+>Off</field
+><field xfdf:original="RadioButtonList[208]"
+>Off</field
+><field xfdf:original="RadioButtonList[209]"
+>Off</field
+><field xfdf:original="RadioButtonList[20]"
+>Off</field
+><field xfdf:original="RadioButtonList[210]"
+>Off</field
+><field xfdf:original="RadioButtonList[211]"
+>Off</field
+><field xfdf:original="RadioButtonList[212]"
+>Off</field
+><field xfdf:original="RadioButtonList[213]"
+>Off</field
+><field xfdf:original="RadioButtonList[214]"
+>Off</field
+><field xfdf:original="RadioButtonList[215]"
+>Off</field
+><field xfdf:original="RadioButtonList[21]"
+>Off</field
+><field xfdf:original="RadioButtonList[22]"
+>Off</field
+><field xfdf:original="RadioButtonList[23]"
+>Off</field
+><field xfdf:original="RadioButtonList[24]"
+>Off</field
+><field xfdf:original="RadioButtonList[25]"
+>Off</field
+><field xfdf:original="RadioButtonList[26]"
+>Off</field
+><field xfdf:original="RadioButtonList[27]"
+>Off</field
+><field xfdf:original="RadioButtonList[28]"
+>Off</field
+><field xfdf:original="RadioButtonList[29]"
+>Off</field
+><field xfdf:original="RadioButtonList[2]"
+>2</field
+><field xfdf:original="RadioButtonList[30]"
+>Off</field
+><field xfdf:original="RadioButtonList[31]"
+>Off</field
+><field xfdf:original="RadioButtonList[32]"
+>Off</field
+><field xfdf:original="RadioButtonList[33]"
+>Off</field
+><field xfdf:original="RadioButtonList[34]"
+>Off</field
+><field xfdf:original="RadioButtonList[35]"
+>Off</field
+><field xfdf:original="RadioButtonList[36]"
+>Off</field
+><field xfdf:original="RadioButtonList[37]"
+>Off</field
+><field xfdf:original="RadioButtonList[38]"
+>Off</field
+><field xfdf:original="RadioButtonList[39]"
+>Off</field
+><field xfdf:original="RadioButtonList[3]"
+>2</field
+><field xfdf:original="RadioButtonList[40]"
+>Off</field
+><field xfdf:original="RadioButtonList[41]"
+>Off</field
+><field xfdf:original="RadioButtonList[42]"
+>Off</field
+><field xfdf:original="RadioButtonList[43]"
+>Off</field
+><field xfdf:original="RadioButtonList[44]"
+>Off</field
+><field xfdf:original="RadioButtonList[45]"
+>Off</field
+><field xfdf:original="RadioButtonList[46]"
+>Off</field
+><field xfdf:original="RadioButtonList[47]"
+>Off</field
+><field xfdf:original="RadioButtonList[48]"
+>Off</field
+><field xfdf:original="RadioButtonList[49]"
+>Off</field
+><field xfdf:original="RadioButtonList[4]"
+>3</field
+><field xfdf:original="RadioButtonList[50]"
+>Off</field
+><field xfdf:original="RadioButtonList[51]"
+>Off</field
+><field xfdf:original="RadioButtonList[52]"
+>Off</field
+><field xfdf:original="RadioButtonList[53]"
+>Off</field
+><field xfdf:original="RadioButtonList[54]"
+>Off</field
+><field xfdf:original="RadioButtonList[55]"
+>Off</field
+><field xfdf:original="RadioButtonList[56]"
+>Off</field
+><field xfdf:original="RadioButtonList[57]"
+>Off</field
+><field xfdf:original="RadioButtonList[58]"
+>Off</field
+><field xfdf:original="RadioButtonList[59]"
+>Off</field
+><field xfdf:original="RadioButtonList[5]"
+>3</field
+><field xfdf:original="RadioButtonList[60]"
+>Off</field
+><field xfdf:original="RadioButtonList[61]"
+>Off</field
+><field xfdf:original="RadioButtonList[62]"
+>Off</field
+><field xfdf:original="RadioButtonList[63]"
+>Off</field
+><field xfdf:original="RadioButtonList[64]"
+>Off</field
+><field xfdf:original="RadioButtonList[65]"
+>Off</field
+><field xfdf:original="RadioButtonList[66]"
+>Off</field
+><field xfdf:original="RadioButtonList[67]"
+>Off</field
+><field xfdf:original="RadioButtonList[68]"
+>Off</field
+><field xfdf:original="RadioButtonList[69]"
+>Off</field
+><field xfdf:original="RadioButtonList[6]"
+>1</field
+><field xfdf:original="RadioButtonList[70]"
+>Off</field
+><field xfdf:original="RadioButtonList[71]"
+>Off</field
+><field xfdf:original="RadioButtonList[72]"
+>Off</field
+><field xfdf:original="RadioButtonList[73]"
+>Off</field
+><field xfdf:original="RadioButtonList[74]"
+>Off</field
+><field xfdf:original="RadioButtonList[75]"
+>Off</field
+><field xfdf:original="RadioButtonList[76]"
+>Off</field
+><field xfdf:original="RadioButtonList[77]"
+>Off</field
+><field xfdf:original="RadioButtonList[78]"
+>Off</field
+><field xfdf:original="RadioButtonList[79]"
+>Off</field
+><field xfdf:original="RadioButtonList[7]"
+>2</field
+><field xfdf:original="RadioButtonList[80]"
+>Off</field
+><field xfdf:original="RadioButtonList[81]"
+>Off</field
+><field xfdf:original="RadioButtonList[82]"
+>Off</field
+><field xfdf:original="RadioButtonList[83]"
+>Off</field
+><field xfdf:original="RadioButtonList[84]"
+>Off</field
+><field xfdf:original="RadioButtonList[85]"
+>Off</field
+><field xfdf:original="RadioButtonList[86]"
+>Off</field
+><field xfdf:original="RadioButtonList[87]"
+>Off</field
+><field xfdf:original="RadioButtonList[88]"
+>Off</field
+><field xfdf:original="RadioButtonList[89]"
+>Off</field
+><field xfdf:original="RadioButtonList[8]"
+>1</field
+><field xfdf:original="RadioButtonList[90]"
+>Off</field
+><field xfdf:original="RadioButtonList[91]"
+>Off</field
+><field xfdf:original="RadioButtonList[92]"
+>Off</field
+><field xfdf:original="RadioButtonList[93]"
+>Off</field
+><field xfdf:original="RadioButtonList[94]"
+>Off</field
+><field xfdf:original="RadioButtonList[95]"
+>Off</field
+><field xfdf:original="RadioButtonList[96]"
+>Off</field
+><field xfdf:original="RadioButtonList[97]"
+>Off</field
+><field xfdf:original="RadioButtonList[98]"
+>Off</field
+><field xfdf:original="RadioButtonList[99]"
+>Off</field
+><field xfdf:original="RadioButtonList[9]"
+>2</field
+></group
+></group
+><weekofbirth
+>40</weekofbirth
+><what_best
+>3</what_best
+><where_edu
+>1</where_edu
+><who_edu
+>3</who_edu
+><whofills
+>4</whofills
+><y_birth
+>2015</y_birth
+><y_fill
+>2016</y_fill
+></fields
+>
