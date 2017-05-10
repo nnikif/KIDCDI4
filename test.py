@@ -83,6 +83,6 @@ if __name__ == '__main__':
     window=tk.Tk()
 #     test=Test(window,216)
 #     test.fill(0)
-    test=KIDTest(window)
+
     window.mainloop()
     

@@ -1,6 +1,6 @@
 from datetime import datetime
 from sqlalchemy import (MetaData,Table,Column,Integer,Numeric,String,DateTime,
-                        ForeignKey,create_engine,select,update)
+                        ForeignKey,create_engine,select,update,and_)
     
 class DbWork():
     def __init__(self):
@@ -55,16 +55,21 @@ class DbWork():
 #                              Column("ctest",String(216))
 #                              )
     
-           
-    def kidslist(self,name):
-        rp=self.connection.execute("SELECT id,name,birthday FROM children WHERE name LIKE ? ORDER BY name",(name+"%",))    
-        return rp.fetchall()
-    
-
+            
 #     def kidslist(self,name):
-#         s=select([self.children]).where(self.children.c.id.like(name+"%")).order_by("name")
+#         rp=self.connection.execute("""SELECT id,name,birthday 
+#                                     FROM children 
+#                                     WHERE name LIKE ? 
+#                                     ORDER BY name""",(name+"%",))    
+#         return rp.fetchall()
+    
+ 
+    def kidslist(self,name):
+        s=select([self.children]).where(self.children.c.name.like(name+"%",)).order_by("name")
 #         print(str(s))
-         
+        rp=self.connection.execute(s)
+        return rp.fetchall()
+#           
     def insert_child(self,child_dict):
         result=self.connection.execute(self.children.insert(),child_dict)
         return result.inserted_primary_key
@@ -73,23 +78,20 @@ class DbWork():
 #         print(quiz_dict)
         self.connection.execute(self.quizzes.insert(),quiz_dict)
         
-#     def insert_test(self,test_dict,ttype):
-#         if ttype=='RCDI':
-#             result=self.connection.execute(self.rcdi_tests.insert(),test_dict)
-#         if ttype=="KID":
-#             result=self.connection.execute(self.kid_tests.insert(),test_dict)
-#             
-#         return result.inserted_primary_key[0]
-    
+
+
     def testlist(self,id,ttype):
-        rp=self.connection.execute("""SELECT quiz_id,day_filled 
-        FROM quizzes 
-        WHERE child_id=? AND testtype=? ORDER BY day_filled""",(id,ttype)) 
-        return rp.fetchall()
-    
-    def nameybyid(self,id):
-        rp=self.connection.execute("SELECT name FROM children WHERE id=? ",(id,))
-        return str(rp.fetchall()[0][0])
+        s=select([self.quizzes.c.quiz_id,self.quizzes.c.day_filled])
+        s=s.where(
+            and_(self.quizzes.c.child_id==id,
+                 self.quizzes.c.testtype==ttype)).order_by("day_filled")
+            
+#         print(str(s))   
+        return self.connection.execute(s).fetchall()
+
+    def namebyid(self,c_id):
+        s=select([self.children.c.name]).where(self.children.c.id==c_id)
+        return str(self.connection.execute(s).first()[0])
     
     def load_name_n_quiz(self,id):
         s=select([self.children,self.quizzes])

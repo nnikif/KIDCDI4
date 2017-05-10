@@ -84,7 +84,7 @@ class WidgetRoot():
         self.tabcontrol.select(self.tab02)    
         
     def showTests(self,id):
-        self.kidname.set(dbase.nameybyid(id))
+        self.kidname.set(dbase.namebyid(id))
         self.treeR.delete(*self.treeR.get_children())
         data=dbase.testlist(id,"RCDI")
         for test in data:
