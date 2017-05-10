@@ -149,14 +149,9 @@ class WidgetRoot():
       
         
     def loadAnyTest(self,idx):
-        dict_load={}
-        dict_l=dbase.load_name_n_quiz(idx)
-#         print(dict_l.keys())
-        for key in dict_l.keys():
-#             print(key, dict_l[key])
-            dict_load[key]=dict_l[key]
-        
-#         print(dict_load["testtype"])
+#         dict_load={}
+        dict_load=dict(dbase.load_name_n_quiz(idx))
+
         qt=qtest.QTest(dict_load.pop("testtype"))
         qt.setDBIDX(dict_load.pop("child_id"), dict_load.pop("quiz_id"))
         dict_load.pop('id')

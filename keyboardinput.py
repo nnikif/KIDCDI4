@@ -33,11 +33,10 @@ class KeyboardInput():
         tk.Button(self.window,text="Сохранить и закрыть",command=self.close).grid(column=1,row=2)
         tk.Button(self.window,text="Вперед>>",command=self.move_right).grid(column=2,row=2)
         
-        self.window.bind('0',self.ent_0)
-        self.window.bind('1',self.ent_1)
-        self.window.bind('2',self.ent_2)
-        self.window.bind('3',self.ent_3)
-        
+        for c in '0123':
+            self.window.bind(c,self.ent)
+            
+         
     def _radio_button4(self,master,answer_var):
         v=tk.IntVar()
         for i in range(4):
@@ -57,22 +56,10 @@ class KeyboardInput():
         self.question.set("Вопрос "+str(self.i+1)+":\n"+self.texts[self.i])
         self.answer_val.set(self.answers[self.i])
 
-    def ent_1(self,event):
-        self.answer_val.set(1)
+    def ent(self,event):
+        self.answer_val.set(int(event.char))
         self.move_right()
-
-    def ent_0(self,event):
-        self.answer_val.val.set(0)
-        self.move_right()    
-
-    def ent_2(self,event):
-        self.answer_val.set(2)
-        self.move_right()
-
-    def ent_3(self,event):
-        self.answer_val.set(3)
-        self.move_right()
-
+    
     def move_right(self):
         if self.i<self.q_number-1:
             self.save_answ()
@@ -96,9 +83,9 @@ class KeyboardInput():
         self.save_answ()
         self.window.destroy()
         
-# if __name__ == '__main__':
-#     work_window=KeyboardInput("RCDI")
-#     work_window.reset_answers()
-#     work_window.window.mainloop()
+if __name__ == '__main__':
+    work_window=KeyboardInput("RCDI",fv.CDI_QUESTIONS)
+    work_window.reset_answers()
+    work_window.window.mainloop()
 #         
 #     

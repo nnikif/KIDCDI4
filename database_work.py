@@ -55,11 +55,16 @@ class DbWork():
 #                              Column("ctest",String(216))
 #                              )
     
-         
+           
     def kidslist(self,name):
         rp=self.connection.execute("SELECT id,name,birthday FROM children WHERE name LIKE ? ORDER BY name",(name+"%",))    
         return rp.fetchall()
     
+
+#     def kidslist(self,name):
+#         s=select([self.children]).where(self.children.c.id.like(name+"%")).order_by("name")
+#         print(str(s))
+         
     def insert_child(self,child_dict):
         result=self.connection.execute(self.children.insert(),child_dict)
         return result.inserted_primary_key
