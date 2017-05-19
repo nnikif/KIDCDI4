@@ -7,13 +7,14 @@ import tkinter.filedialog
 import form_values as fv
 import keyboardinput
 from database_work import dbase
+import read_pdf
 
 class QTest(Quiz,Test):
     def __init__(self,ttype):
-        self.ttype=ttype
-        self.window=tk.Toplevel()
+        self.ttype = ttype
+        self.window = tk.Toplevel()
         self.window.title("Анкета+тестовый лист "+ttype)
-        tabcontrol=ttk.Notebook(self.window)
+        tabcontrol = ttk.Notebook(self.window)
         tabcontrol.pack()
         tab01=ttk.Frame(tabcontrol)
         tabcontrol.add(tab01,text="Анкета")
@@ -27,7 +28,7 @@ class QTest(Quiz,Test):
         
         self.window.grab_set()
 
-        tk.Button(tab01,text="Загрузить из .xml файла",command=self.readfromXML).grid(column=0,row=7)
+        tk.Button(tab01,text="Загрузить из .pdf файла",command=self.read_from_pdf).grid(column=0,row=7)
         tk.Button(tab01,text="Ручной ввод теста",command=self.call_keyboard).grid(column=1,row=7)
         tk.Button(tab01,text="Сохранить данные",command=self.save_data).grid(column=2,row=7)
         
@@ -41,10 +42,21 @@ class QTest(Quiz,Test):
          
     def readfromXML(self):
         filename = tk.filedialog.askopenfilename(filetypes = (("XML files", "*.xml"),))
-        dict1=read_xml.parsexml_quiz(filename)
+        dict1 = read_xml.parsexml_quiz(filename)
         self.setbydict(dict1)
         array1=read_xml.parsexml_test(filename,fv.QUESTLENGTH[self.ttype])
         self.load_array(array1)
+        
+    def read_from_pdf(self):
+        filename = tk.filedialog.askopenfilename(filetypes = (("PDF files",
+                                                               "*.pdf"),))
+        dict1, array1 = read_pdf.get_form_fields(filename,
+                                                 fv.QUESTLENGTH[self.ttype])
+        self.setbydict(dict1)
+        self.load_array(array1)
+#         print(array1)
+        
+        
     
     def call_keyboard(self):
         ki=keyboardinput.KeyboardInput(self.ttype,self.read_results())
@@ -67,12 +79,12 @@ class QTest(Quiz,Test):
             dbase.update_child(dict_child,self.child_id)       
         dict_write['child_id']=self.child_id
         dict_write["testtype"]=self.ttype
-#         print(self.quiz_id)
+
         if not self.quiz_id:
 
             dbase.insert_quiz(dict_write)
         else:
-#             print("yah")
+
             dbase.update_quiz(dict_write, self.quiz_id)
             
         self.window.destroy()  

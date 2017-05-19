@@ -178,8 +178,6 @@ class Quiz():
     
     def setbydict(self,dict1):
         for item in dict1:
-#             print(item)
-#             print(dict1[item])
 
             self.dict[item].set(dict1[item])
 
@@ -226,12 +224,13 @@ class Quiz():
     def load_name(self):
         dict1={}
         rp=dbase.load_name_only(self.child_id)
-        dict1["name"]=rp["name"]
+        dict1["name"] = rp["name"]
         dict1["d_birth"],dict1['m_birth'],dict1["y_birth"]=read_datetime(rp["birthday"]) 
         self.setbydict(dict1)   
+
     
 if __name__ == '__main__':
-    window=tk.Tk()
+    window = tk.Tk()
     tabcontrol=ttk.Notebook(window)
     
     

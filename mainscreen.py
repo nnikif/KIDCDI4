@@ -86,21 +86,21 @@ class WidgetRoot():
     def showTests(self,id):
         self.kidname.set(dbase.namebyid(id))
         self.treeR.delete(*self.treeR.get_children())
-        data=dbase.testlist(id,"RCDI")
+        data=dbase.testlist(id,"RCDI")  
         for test in data:
-            self.treeR.insert("",1000,text=test[0],values=test[1]) 
+            self.treeR.insert("",1000,text=test[0],values=test[1].strftime("%d/%m/%Y")) 
         
         self.treeK.delete(*self.treeK.get_children())
         data=dbase.testlist(id,"KID")
         for test in data:
-            self.treeK.insert("",1000,text=test[0],values=test[1])
+            self.treeK.insert("",1000,text=test[0],values=test[1].strftime("%d/%m/%Y"))
            
 #         
     def showinTab(self,nameS):
         data=dbase.kidslist(nameS)
         self.tree.delete(*self.tree.get_children())
         for person in data:
-            self.tree.insert("",100000,text=person[0],values=(person[1],person[2]))   
+            self.tree.insert("",100000,text=person[0],values=(person[1],person[2].strftime("%d/%m/%Y")))   
      
     def showInTabSearch(self,a):
         self.showinTab(self.nameS.get()) 
@@ -149,7 +149,7 @@ class WidgetRoot():
       
         
     def loadAnyTest(self,idx):
-#         dict_load={}
+
         dict_load=dict(dbase.load_name_n_quiz(idx))
 
         qt=qtest.QTest(dict_load.pop("testtype"))

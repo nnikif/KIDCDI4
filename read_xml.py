@@ -16,7 +16,8 @@ def parsexml_quiz(fname='Петрова Маша_данные1.xml'):
         if key not in dict0:
             dict1[key]="Off"
         else:
-            dict1[key]=dict0[key]    
+            dict1[key] = dict0[key]
+
     for key in dict1:
         if dict1[key] and dict1[key]!="Off":
             # print(key,dict1[key])
@@ -35,9 +36,9 @@ def parsexml_quiz(fname='Петрова Маша_данные1.xml'):
     return dict1
 
 def parsexml_test(fname,length):
-    lst=[None]*length
+    lst = [None]*length
     tree = ET.parse(fname)
-    root=tree.getroot()
+    root = tree.getroot()
     for child in root.iter('field'):
         digit=(re.findall(r'\d+',str(child.attrib)))
         digit=int(digit[0])
