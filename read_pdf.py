@@ -4,6 +4,7 @@ import form_values as fv
 from pprint import pprint
 import re
 
+
 def _getFields(obj, tree=None, retval=None, fileobj=None):
     """
     Extracts field data if this PDF contains interactive form fields.
@@ -53,6 +54,7 @@ def remove_slash(str_val):
     else:
         return int(str_val)
 
+
 def get_form_fields(infile, length):
     infile = PdfFileReader(open(infile, 'rb'))
     fields = _getFields(infile)
@@ -80,4 +82,3 @@ if __name__ == '__main__':
 
     d1, d2 = get_form_fields(pdf_file_name, 216)
 #     print(d2)
-    
